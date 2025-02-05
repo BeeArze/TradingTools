@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
+    "@types/less": "^3.0.8",
     "@types/node": "^22.10.7",
     "@vant/auto-import-resolver": "^1.2.1",
     "@vitejs/plugin-vue": "^5.2.1",

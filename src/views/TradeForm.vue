@@ -27,7 +27,7 @@
       />
     </van-cell-group>
     <div style="margin: 16px;">
-      <van-button round block type="info" native-type="submit" :disabled="!isFormValid">计算</van-button>
+      <van-button round block type="primary" native-type="submit" :disabled="!isFormValid">计算</van-button>
       <van-button round block type="default" native-type="reset" style="margin-top: 10px;">重置</van-button>
     </div>
     <div v-if="result !== null" class="result">

@@ -21,7 +21,7 @@ export default defineConfig({
         name: 'Trading Tools',
         short_name: 'TT',
         description: '',
-        theme_color: '#fff'
+        theme_color: '#eff2f5'
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}'],

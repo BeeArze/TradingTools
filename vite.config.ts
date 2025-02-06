@@ -7,6 +7,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { VantResolver } from '@vant/auto-import-resolver'
 import less from 'less'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,6 +15,18 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      manifest: {
+        name: 'Trading Tools',
+        short_name: 'TT',
+        description: '',
+        theme_color: '#fff'
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+      }
+    }),
     AutoImport({
       resolvers: [VantResolver()],
     }),
